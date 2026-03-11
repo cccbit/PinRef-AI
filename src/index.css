@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-pink: #ff4d94;
+  --color-brand-bg: #ffffff;
+  --color-brand-card: #f9fafb;
+  --color-brand-border: #e5e7eb;
+  --color-brand-text: #1f2937;
+  --color-brand-muted: #6b7280;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+}
+
+.glass-card {
+  background: var(--color-brand-card);
+  border: 1px solid var(--color-brand-border);
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  background: #ffffff;
+  border: 1px solid var(--color-brand-border);
+  color: var(--color-brand-text);
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  border-color: var(--color-brand-pink);
+  color: var(--color-brand-pink);
+  box-shadow: 0 4px 12px rgba(255, 77, 148, 0.1);
+}
+
+.btn-action {
+  background: var(--color-brand-pink);
+  color: white;
+  border: none;
+}
+
+.btn-action:hover {
+  background: #e63d83;
+}
+
+.pink-glow {
+  box-shadow: 0 0 15px rgba(255, 77, 148, 0.2);
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d94;
+}
